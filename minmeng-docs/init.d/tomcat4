@@ -1,0 +1,46 @@
+#!/bin/sh
+#
+# TOMCAT: Start/Stop/Restart TOMCAT
+# 
+# chkconfig: 2345 80 20
+# description: Tomcat is a Java Servlet Container
+#
+#
+# match these values to your environment:
+export CATALINA_BASE=/data/local/tomcats/tomcat4
+export CATALINA_HOME=/data/local/tomcats/tomcat4
+export CATALINA_TMPDIR=/data/local/tomcats/tomcat4/temp
+export JRE_HOME=/data/local/java/jdk1.8.0_201/jre
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+TOMCAT=/data/local/tomcats/tomcat4
+start() {
+	echo "start tomcat4" 
+	$TOMCAT/bin/catalina.sh start
+}
+stop() {
+	echo "stop tomcat4"
+	$TOMCAT/bin/catalina.sh stop
+}
+
+case "$1" in
+      start)
+      start
+      ;;
+      stop)
+      stop
+      ;;
+      status)
+      ;;
+      status)
+      ;;
+      restart)
+      stop
+      start
+      ;;
+      *)
+      echo -n ___FCKpd___0quot;Usage: $0 {start stop restart}
+      ;;
+      esac
+      exit $RETVAL

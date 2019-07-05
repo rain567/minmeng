@@ -1,0 +1,33 @@
+cp -rf tomcat6.0 tomcat1
+cp -rf tomcat6.0 tomcat2
+cp -rf tomcat6.0 tomcat3
+cp -rf tomcat6.0 tomcat4
+
+
+chmod a+x /data/local/tomcats/tomcat1/bin/*.sh
+chmod a+x /data/local/tomcats/tomcat2/bin/*.sh
+chmod a+x /data/local/tomcats/tomcat3/bin/*.sh
+chmod a+x /data/local/tomcats/tomcat4/bin/*.sh
+
+chmod a+x /etc/init.d/tomcat1
+chmod a+x /etc/init.d/tomcat2
+chmod a+x /etc/init.d/tomcat3
+chmod a+x /etc/init.d/tomcat4
+
+chkconfig tomcat1 on
+chkconfig tomcat2 on
+chkconfig tomcat3 on
+chkconfig tomcat4 on
+
+service tomcat1 stop
+service tomcat2 stop
+service tomcat3 stop
+service tomcat4 stop
+
+
+service tomcat1 start
+service tomcat2 start
+service tomcat3 start
+service tomcat4 start
+
+

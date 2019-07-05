@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> 
+{"result":[{
+	"id":"cat",
+	"items":[
+		{
+			"id":"site",
+			"name":"系统设置",
+			"url":"setting/global"
+		},{
+			"id":"setting01",
+			"name":"栏目管理",
+			"url":"cat"
+		},{
+			"id":"setting02",
+			"name":"广告管理",
+			"url":"setting/ad"
+		},{
+			"id":"setting03",
+			"name":"滚动链接",
+			"url":"setting/slide-link"
+		},{
+			"id":"setting04",
+			"name":"友情链接",
+			"url":"setting/friendurl"
+		},{
+			"id":"setting05",
+			"name":"创建索引",
+			"url":"setting/indexed"
+		}<%!/**,{
+		"id":"param",
+		"name":"参数管理",
+		"url":"param"
+	}
+	*/%>]
+}]}

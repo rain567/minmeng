@@ -1,0 +1,300 @@
+
+input {
+	outline: none;
+}
+
+.tip {
+	margin: 2px 0 2px 0;
+	line-height: 18px;
+	color: #666
+}
+
+.tip {
+	color: #666
+}
+
+.tip.loading {
+	padding: 0 0 0 20px;
+	color: #999;
+	background: url(icons/loading-16x16.gif) no-repeat
+}
+
+.tip.error {
+	padding: 0 0 0 20px;
+	color: red;
+	background: url(icons/error-16x16.gif) no-repeat
+}
+
+.tip.success {
+	padding: 0 0 0 20px;
+	color: green;
+	background: url(icons/success-16x16.gif) no-repeat
+}
+
+.tip.warning {
+	padding: 0 0 0 20px;
+	color: #ff9933;
+	background: url(icons/alert-16x16.gif) no-repeat
+}
+
+.active {
+	background: url(images/active.gif) no-repeat;
+	width: 48px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer
+}
+
+.active.N {
+	background-position: 0 -20px
+}
+
+div.center {
+	padding: 0;
+	overflow: auto;
+}
+
+div.center .buttons {
+	border-bottom: 0;
+	margin: 0;
+	clear: both;
+	height: 40px;
+}
+
+div.center .buttons .left {
+	float: left;
+	padding: 6px 0 0 10px;
+	*padding: 3px 0 0 5px;
+}
+
+div.center .buttons .right {
+	float: right;
+	line-height: 40px;
+	padding: 0 10px 0 0;
+	*padding: 0 5px 0 0
+}
+
+div.center .buttons .right a {
+	line-height: 40px
+}
+
+div.center form button {
+	margin: 6px;
+	*margin: 3px;
+}
+
+div.center form {
+	margin: 20px 0 0 0;
+	padding: 0
+}
+
+div.center form dl {
+	padding: 0;
+	margin: 0;
+	clear: both
+}
+
+div.center form dl dd {
+	float: left;
+	text-align: left;
+	padding: 0;
+	margin: 2px;
+}
+
+div.center form dl dd.l {
+	width: 180px;
+	padding-top: 4px;
+	text-align: right
+}
+
+div.center form dl dd .txt {
+	padding: 5px 0 5px 0;
+}
+
+div.center form dl dd  #names {
+	padding: 2px 0 5px 0;
+	font: bold 14px arial, "微软雅黑", "黑体";
+}
+
+div.center form dl dd font {
+	line-height: 22px;
+	margin-right: 5px
+}
+
+div.center form .text {
+	padding: 5px;
+}
+
+div.center form .text.short {
+	width: 80px
+}
+
+div.center form .text.long {
+	width: 400px
+}
+
+div.center form .strength {
+	height: 32px;
+	line-height: 22px;
+	font-size: 12px;
+	overflow: hidden
+}
+
+div.center form #pwdstrong {
+	line-height: 18px;
+	height: 20px;
+}
+
+div.center form #pwdstrong div {
+	float: left;
+	width: 52px;
+	text-align: center;
+	overflow: hidden;
+	height: 6px;
+}
+
+table.list {
+	width: 100%;
+	*width: auto;
+	_width: auto;
+	overflow: hidden;
+	margin: 0;
+	table-layout: fixed;
+}
+
+table.list th {
+	padding: 4px;
+}
+
+table.list td {
+	padding: 5px;
+	text-align: center;
+}
+
+table.list td .row {
+	text-align: left;
+	margin-bottom: 10px
+}
+
+table.list td .row.odd {
+	background: #eee;
+}
+
+table.list td .row.even {
+	background: #f7f7f7;
+}
+
+table.list td .row h4 {
+	margin: 0;
+	padding: 0;
+}
+
+table.list td .row .row-data {
+	margin-top: 5px;
+}
+
+table.list tbody {
+	border: 0;
+	margin: 0;
+	padding: 0
+}
+
+.page {
+	padding: 5px 0 5px 0;
+	overflow: auto;
+	line-height: 22px;
+	clear: both;
+}
+
+.page div {
+	font-size: 12px;
+}
+
+.page {
+	margin: 5px 0 5px 0;
+}
+
+.page div ul {
+	margin: 0 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.page div ul li {
+	display: inline;
+	margin: 1px;
+	padding: 2px 0 2px 0;
+}
+
+.page div ul li a {
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 12px;
+	padding: 0px 6px 0px 7px;
+}
+
+.page div ul li.text {
+	border: 0;
+}
+
+.page div ul li.text:hover {
+	border: 0;
+}
+
+.page div ul li.p a {
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+div.center {
+	background: #fff;
+}
+
+div.center div.title {
+	font: bold 14px arial, "微软雅黑", "黑体";
+	color: #333;
+}
+
+div.center .buttons {
+	background: #fff;
+	border-bottom: 1px solid #dedede;
+}
+
+div.center form dl dd .txt {
+	font: normal 14px arial, "微软雅黑", "黑体";
+	color: #333
+}
+
+div.center form dl dd  #names {
+	color: #333
+}
+
+div.center form .text {
+	border: 1px solid #dedede;
+	color: #666
+}
+
+div.center form .text.calendar {
+	background: url(images/icons/calendar.gif) no-repeat;
+	background-position: right 3px;
+}
+
+div.center form .text:focus {
+	background-color: #fdf8e8;
+	border: 1px solid #ffcc66;
+	color: #000
+}
+
+div.center form .strength {
+	font-size: 12px;
+}
+
+div.center form #pwdstrong div {
+	background: #eee;
+}
+
+div.center button:hover {
+	color: #000;
+}

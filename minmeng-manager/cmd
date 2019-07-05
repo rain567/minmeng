@@ -1,0 +1,8 @@
+rm -rf remote:/data/projects/minmeng/indexed/*
+rm -rf remote:/data/projects/minmeng-bijie/indexed/*
+rm -rf remote:/data/projects/minmeng-guiyang/indexed/*
+rm -rf remote:/data/projects/minmeng-liupanshui/indexed/*
+rm -rf remote:/data/projects/minmeng-qiandongnan/indexed/*
+rm -rf remote:/data/projects/minmeng-qianxinan/indexed/*
+rm -rf remote:/data/projects/minmeng-qiannan/indexed/*
+   

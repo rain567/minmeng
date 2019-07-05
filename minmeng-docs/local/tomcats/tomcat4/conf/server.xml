@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Server port="8004" shutdown="SHUTDOWN">
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
+  
+  <Service name="Catalina1">
+    <Connector port="9401" protocol="AJP/1.3" redirectPort="8441" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng-qiannan/manager"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+
+  <Service name="Catalina2">
+    <Connector port="9402" protocol="AJP/1.3" redirectPort="8442" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng-qiannan/web"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+  
+  <Service name="Catalina3">
+    <Connector port="9403" protocol="AJP/1.3" redirectPort="8443" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng/web"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+
+</Server>

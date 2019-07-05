@@ -1,0 +1,98 @@
+body,form{margin:0;padding:0;border:0; font:normal 12px "微软雅黑","宋体",Verdana,arial;color:#333}
+a{text-decoration:none;font:normal 12px Verdana,Arial;}
+body{background:#fff;}
+input,button{outline:none;}
+.main{width:900px;position:relative;margin:0 auto}
+#top {overflow:hidden;}
+#top .logo{float:left;margin-top:10px;margin-bottom:10px;left:0;z-index:99;background:url(images/logo.png) no-repeat 0px 0px;background-size:contain;width:352px;height:65px;overflow:hidden;float:left;padding-top:30px;font-size:22px;padding-left:340px} 
+#top .left{float:left;}
+#top .right{float:right;margin:30px 20px 0 0;}
+#top .right a{color:#484848;padding:6px;*padding:3px}
+#top .right a:hover{color:#0099cc}
+
+#center {overflow:hidden;
+		position:relative;
+		height:450px;
+		background:#f3f3f3 repeat-x}
+#center .main{
+	overflow:hidden;height:450px}
+#slider{
+	width:100%;
+	height:450px;
+	position:absolute;
+	z-index:98
+}
+#center #login{
+	position:absolute;
+	z-index:99;
+	width:410px;
+	margin:0 auto;
+	top:80px;	
+	left:300px;
+	border:1px solid #999;
+    -moz-box-shadow: 3px 3px 4px #999;
+    -webkit-box-shadow: 3px 3px 4px #999;
+    box-shadow: 3px 3px 4px #999;
+}
+
+#tabs{}
+#tabs a{display:block;
+		font:bold 15px arial,"微软雅黑","宋体";
+		color:#333333;
+		cursor:pointer;
+		background:#eee;
+		line-height:40px;
+		height:40px;
+		text-align:left;
+		padding-left:20px;
+		border-right:1px solid #dedede;
+		border-bottom:1px solid #dedede}
+
+#contents div.content{width:380px;margin:0 auto;padding:10px 20px 20px 20px ;*padding:5px 10px 10px 10px }
+
+#login{background:#f7f7f7}
+#login form{margin:0;padding:0}
+#login form a{color:#000}
+#login form a:hover{color:#Ff6600}
+#login form dl{clear:both;padding:0;margin:0}
+#login form dl dd{text-align:left;padding:0;margin:5px  0 10px 0;clear:both}
+#login form dl dd div.left{float:left;padding:5px 0 10px 0;*padding:3px 0 5px 0;font:bold 14px arial,"微软雅黑","黑体";color:#666;}
+#login form dl dd div.right{float:right;padding:7px 30px 0 0;font:normal 12px arial,"微软雅黑","黑体";color:#666}
+#login form dl dd div.right a{color:#666}
+#login form dl dd div.right a:hover{color:#ff6600}
+#login form dl dd .tip{padding:5px 0 5px 0;margin:2px 0 2px 0;line-height:18px;color:#666}
+#login form dl dd .msg{padding:0 0 0 20px;line-height:18px;margin:2px 0 2px 0}
+#login form dl dd .tip.loading,.msg.loading{padding:0 0 0 20px;color:#999;background:url(images/loading-16x16.gif) no-repeat}
+#login form dl dd .tip.error,.msg.error{padding:0 0 0 20px;color:red;background:url(images/error-16x16.gif) no-repeat}
+#login form dl dd .tip.success,.msg.success{padding:0 0 0 20px;color:green;background:url(images/success-16x16.gif) no-repeat}
+#login form dl dd .msg.warning{color:#ff9933;background:url(images/alert-16x16.gif) no-repeat}
+#login form dl dd font{color:red;line-height:22px;margin-right:5px}
+#login form input.text{
+	float:left;
+	font:bold 12px arial,"微软雅黑","黑体";
+	border:1px solid #ddd;
+	padding:10px;*padding:5px;color:#666;
+    /* -moz-box-shadow: 3px 3px 4px #eee;
+    -webkit-box-shadow: 3px 3px 4px #eee;
+    box-shadow: 3px 3px 4px #eee; */
+}
+#login form input.text.normal{width:200px}
+#login form input.text.password{width:350px;font-size:10px;padding:10px}
+#login form input.text.long{width:348px;}
+#login form input.text:focus{background-color:#fdf8e8;border:1px solid #ffcc66;color:#000}
+#login form button.submit{
+	font:bold 16px arial,"微软雅黑","黑体";
+	letter-spacing:1em;
+	height:35px;
+	width:370px;
+	color:#FFF;
+	background:#484848;
+	border:1px solid #444;
+    -moz-box-shadow: 3px 3px 4px #484848;
+    -webkit-box-shadow: 3px 3px 4px #484848;
+    box-shadow: 3px 3px 4px #484848;
+}
+#login form span.label{float:left;padding:10px 2px 10px 2px;*padding:5px 1px 5px 1px;font:bold 14px arial;}
+#login form input.text.label{width:100px;padding-left:0;border:1px solid transparent;font:bold 14px arial;background:transparent;}
+#login form input.text.label:focus{border:1px solid #eee;background:#fff}
+#footer{clear:both;color:#666;position:fixed;bottom:0px;width:100%;text-align:center;padding:10px}

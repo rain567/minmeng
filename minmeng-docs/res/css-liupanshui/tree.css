@@ -1,0 +1,71 @@
+body{background:#fff}
+.tree a{
+	margin:0;
+	padding:0 5px 0 5px;
+	cursor:pointer;
+	color:#47aefe
+}
+.tree a:hover{color:#0033cc}
+.itemcat{cursor:pointer;padding-left: 18px;border:1px solid #fff}
+.itemcat.iclosed{background:url(images/tree/plus.gif) 1px 3px no-repeat;overflow:hidden;}
+.itemcat.iopen{background:url(images/tree/minus.gif) 1px 3px no-repeat;overflow:hidden;}
+
+.tree .closed{
+	background:url(images/tree/plus.gif) left 3px no-repeat;
+	width:10px;
+	height:18px;
+	overflow:hidden;
+}
+.tree .opened{
+	background:url(images/tree/minus.gif) left 3px no-repeat;
+	width:10px;
+	height:18px;
+	overflow:hidden;
+}
+.tree .folder{
+	display:inline-block;
+	background:url(images/tree/folder.gif) left 4px no-repeat;
+	width:16px;
+	height:26px;
+	float:left;
+	margin:0 0 0 2px;
+}
+.tree .folder-closed{
+	display:inline-block;
+	background:url(images/tree/folder-closed.gif) left 2px no-repeat;
+	width:16px;
+	height:26px;
+	float:left;
+	margin:0 0 0 2px;
+}
+.tree .file{
+	display:inline-block;
+	background:url(images/tree/file.gif) left 2px no-repeat;
+	width:16px;
+	height:26px;
+	float:left;
+	margin:0 0 0 2px;
+}
+.tree{
+	list-style-type:none;
+	padding:5px 0px 0 0 ;
+	margin:0;
+	overflow:visible;
+	line-height:22px;
+	width:100%;
+}
+.tree ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.tree li{
+	margin:0 0 0 18px;
+	padding:0 0 0 0px;
+	list-style-type:none;
+}
+
+.tree li div:hover{
+	background:#fff9f7;
+}
+.half-selection{background:#CCC;border:1px solid #000}

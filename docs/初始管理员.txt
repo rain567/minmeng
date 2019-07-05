@@ -1,0 +1,45 @@
+admin  111111 
+管理员A  123456
+管理员B  123456
+管理员C  123456
+管理员D  123456
+管理员E  123456
+
+
+mkdir -p /data/projects/minmeng-bijie/web/ROOT
+mkdir -p /data/projects/minmeng-bijie/manager/ROOT
+
+mkdir -p /data/projects/minmeng-liupanshui/web/ROOT
+mkdir -p /data/projects/minmeng-liupanshui/manager/ROOT
+
+mkdir -p /data/projects/minmeng-qiandongnan/web/ROOT
+mkdir -p /data/projects/minmeng-qiandongnan/manager/ROOT
+
+mkdir -p /data/projects/minmeng-qianxinan/web/ROOT
+mkdir -p /data/projects/minmeng-qianxinan/manager/ROOT
+
+mkdir -p /data/projects/minmeng-qiannan/web/ROOT
+mkdir -p /data/projects/minmeng-qiannan/manager/ROOT
+
+rm -rf /data/projects/minmeng-liupanshui/manager/ROOT
+rm -rf /data/projects/minmeng-qiandongnan/manager/ROOT
+rm -rf /data/projects/minmeng-qianxinan/manager/ROOT
+rm -rf /data/projects/minmeng-qiannan/manager/ROOT
+
+rm -rf /data/projects/minmeng-liupanshui/web/ROOT
+rm -rf /data/projects/minmeng-qiandongnan/web/ROOT
+rm -rf /data/projects/minmeng-qianxinan/web/ROOT
+rm -rf /data/projects/minmeng-qiannan/web/ROOT
+
+cd /data/projects/minmeng-bijie/manager/
+cp -rf ROOT  /data/projects/minmeng-liupanshui/manager/
+cp -rf ROOT  /data/projects/minmeng-qiandongnan/manager/
+cp -rf ROOT  /data/projects/minmeng-qianxinan/manager/
+cp -rf ROOT  /data/projects/minmeng-qiannan/manager/
+
+
+cd /data/projects/minmeng-bijie/web/
+cp -rf ROOT  /data/projects/minmeng-liupanshui/web/
+cp -rf ROOT  /data/projects/minmeng-qiandongnan/web/
+cp -rf ROOT  /data/projects/minmeng-qianxinan/web/
+cp -rf ROOT  /data/projects/minmeng-qiannan/web/

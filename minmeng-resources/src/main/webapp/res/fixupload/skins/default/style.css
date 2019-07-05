@@ -1,0 +1,104 @@
+body{margin:0;padding:0;border:0}
+.fixupload-container{
+	overflow:hidden;
+	margin:0;padding:0;
+}
+.click{background:url(images/upload.png) no-repeat;border:0;width:70px;
+	margin:10px 0 8px 10px;*margin:5px 0 4px 5px;
+	_margin:5px 0 4px 5px;
+	height:26px;cursor:pointer}
+.click:hover{background-position:0 -26px}
+.click.disabled{background-position:0 -78px}
+.error{background:url(images/hits.png) no-repeat 0 3px;line-height:22px;height:22px;padding-left:18px;color:#cc3300}
+
+.fixupload-default-outer{
+	border:1px solid #dedede;
+	padding:2px;
+	margin-top:2px;
+	margin-right:5px;
+	overflow:hidden;
+	background:#fefefe;
+}
+
+.fixupload-default-outer .del{
+	padding: 0 4px 0 4px;
+	*padding:0 2px 0 2px;
+	_padding:0 2px 0 2px;
+	font-size:16px;
+	text-align:center;
+	font-family:tahoma,arial,\5b8b\4f53,sans-serif; 
+	top:0;
+	right:0;
+	position:absolute;
+	cursor:pointer;
+	color:#ff6600
+}
+.fixupload-default-outer .del:hover{color:blue;}
+.fixupload-default{
+	border:1px solid #dedede;
+	position:relative;
+	margin:0;padding:0;border:0; font:normal 12px arial,"宋体";
+	color:#484848;
+	clear:both;
+	display:inline-block;
+	*display:inline;
+	_display:inline;
+	white-space:nowrap;
+	word-break:keep-all;
+}
+.fixupload-default .icon{
+	float:left;
+	display:inline-block;
+	*display:inline;
+	_display:inline;
+	white-space:nowrap;
+	word-break:keep-all;
+	padding:2px;
+	*padding:1px;
+	_padding:1px;
+}
+.fixupload-default .progressContainer{
+	display:inline-block;
+	*display:inline;
+	_display:inline;
+	white-space:nowrap;
+	word-break:keep-all;
+	width:100%;
+}
+
+.fixupload-default .uploadIframe{display:none}
+.fixupload-default .progressBar{width:100%;height:5px;
+		border-left:1px solid #eee;border-top:1px solid #eee;
+		border-right:1px solid #fff;border-bottom:1px solid #fff;
+		background:#fff}
+
+.fixupload-default .progress{
+	width:0;
+	height:100%;
+	background:url(images/progress.gif) repeat-x;
+}
+.fixupload-default .uploadForm div{padding:5px}
+.fixupload-default .error{
+	color:#ff0000;
+}
+.fixupload-default .state{
+	display:inline-block;
+	*display:inline;
+	white-space:nowrap;
+	word-break:keep-all;
+	clear:both;
+	line-height:25px;
+	height:25px;
+	overflow:hidden;
+}
+.fixupload-default .state span{float:left;display:inline-block;*display:inline;white-space:nowrap;word-break:keep-all;}
+.fixupload-default .state .filename{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	white-space: nowrap; 
+	color:#888}
+.fixupload-default .state span.size{color:#004400}
+.fixupload-default .state span.percent{color:green}

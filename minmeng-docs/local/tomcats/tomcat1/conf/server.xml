@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Server port="8001" shutdown="SHUTDOWN">
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
+  
+  <Service name="Catalina1">
+    <Connector port="9101" protocol="AJP/1.3" redirectPort="8141" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng/manager"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+  <Service name="Catalina2">
+    <Connector port="9102" protocol="AJP/1.3" redirectPort="8142" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng/web"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+
+  
+  <Service name="Catalina3">
+    <Connector port="9103" protocol="AJP/1.3" redirectPort="8143" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng-guiyang/manager"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service>
+
+  <Service name="Catalina4">
+    <Connector port="9104" protocol="AJP/1.3" redirectPort="8244" />
+    <Engine name="Catalina" defaultHost="localhost">
+      <Host name="localhost"  appBase="/data/projects/minmeng-guiyang/web"
+            unpackWARs="true" autoDeploy="true">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+		<Context path="" docBase="ROOT" reloadable="true"/>	
+      </Host>
+    </Engine>
+  </Service><!-- -->
+  
+</Server>
