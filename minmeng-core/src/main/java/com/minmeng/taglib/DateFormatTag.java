@@ -6,7 +6,7 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 import org.apache.log4j.Logger;
-import com.j2mvc.util.Utils;
+import org.fixwork.util.Utils;
 
 /**
  * 格式化日期时间

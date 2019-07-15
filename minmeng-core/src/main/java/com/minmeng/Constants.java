@@ -4,7 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.j2mvc.framework.i18n.I18n;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.util.MD5;
+import org.fixwork.util.StringUtils;
+import org.fixwork.util.Utils;
 
 /**
  * @description 常量

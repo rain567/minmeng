@@ -1,11 +1,12 @@
 package com.minmeng.entity.cms;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
 
 import com.minmeng.entity.DBConstants;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 
 /**
@@ -18,7 +19,7 @@ import com.minmeng.entity.DBConstants;
  */
 @Table(DBConstants.Table.CMS.CONTENT_ATTACH)
 @PrimaryKey(autoIncrement = false)
-public class ContentAttach extends BaseEntity{
+public class ContentAttach extends BaseEntity {
 	
 	private static final long serialVersionUID = 2922004179844334105L;
 

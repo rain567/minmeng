@@ -5,7 +5,7 @@ import java.io.IOException;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import com.j2mvc.util.MD5;
+import org.fixwork.util.MD5;
 
 public class MD5Tag  extends SimpleTagSupport {
 	String source = "";// 源

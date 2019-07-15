@@ -6,12 +6,14 @@ import java.util.List;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.util.StringUtils;
 
 import com.minmeng.entity.common.Cat;
 import com.minmeng.service.common.CatService;
-
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.util.MD5;
+import org.fixwork.util.StringUtils;
+import org.fixwork.util.Utils;
 /**
  * 分类树
  * @author 贵州万嘉：杨大江

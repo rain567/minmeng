@@ -8,13 +8,13 @@
 	<DataSource 
 		name="jdbc/minmeng" 
 		driverClassName="com.mysql.jdbc.Driver" 
-		username="minmeng"
-		password="minmeng@20181214" 
+		username="root"
+		password=""
 		maxIdle="2"
 		maxWait="100000" 
 		maxActive="100"
 		initialSize="1"
-		url="jdbc:mysql://127.0.0.1:3306/minmeng?autoReconnect=true&amp;failOverReadOnly=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />	
+		url="jdbc:mysql://192.168.1.100:3306/minmeng?autoReconnect=true&amp;failOverReadOnly=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
 	
 	<!-- 拦截器 -->
 	 <interceptors>

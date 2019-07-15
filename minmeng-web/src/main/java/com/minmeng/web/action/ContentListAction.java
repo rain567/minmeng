@@ -2,10 +2,9 @@ package com.minmeng.web.action;
 
 import java.io.IOException;
 
-import com.j2mvc.framework.action.RequestUri;
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
-
+import org.fixwork.framework.action.RequestUri;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
 import com.minmeng.entity.ui.Page;
 
 /**

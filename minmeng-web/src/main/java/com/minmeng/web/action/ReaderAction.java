@@ -10,10 +10,17 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.WritableByteChannel;
 
 import org.apache.log4j.Logger;
-import com.j2mvc.framework.action.Action;
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
+
+import org.fixwork.framework.action.Action;
+import org.fixwork.framework.action.RequestUri;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
+import org.fixwork.util.*;
+import com.minmeng.entity.common.Board;
+import com.minmeng.entity.ui.Page;
+import com.minmeng.service.common.BoardService;
+import org.fixwork.util.Error;
 
 import com.minmeng.entity.common.Attach;
 import com.minmeng.service.common.AttachService;

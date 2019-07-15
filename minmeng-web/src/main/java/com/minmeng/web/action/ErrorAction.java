@@ -1,7 +1,7 @@
 package com.minmeng.web.action;
 
-import com.j2mvc.framework.action.Action;
-import com.j2mvc.framework.mapping.ActionUri;
+import org.fixwork.framework.action.Action;
+import org.fixwork.mapping.ActionUri;
 
 /**
  * @Description 错误Action

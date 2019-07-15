@@ -2,20 +2,15 @@ package com.minmeng.web.action;
 
 import java.util.List;
 
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
-import com.j2mvc.framework.util.DataValidations;
-import com.j2mvc.util.Error;
-import com.j2mvc.util.Pagination;
-import com.j2mvc.util.StringUtils;
-import com.j2mvc.util.Success;
-import com.j2mvc.util.Utils;
-import com.j2mvc.util.Validations;
-
+import org.fixwork.framework.action.Action;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
+import org.fixwork.util.*;
 import com.minmeng.entity.common.Board;
 import com.minmeng.entity.ui.Page;
 import com.minmeng.service.common.BoardService;
+import org.fixwork.util.Error;
 
 /**
  * @Description 内容

@@ -26,6 +26,11 @@
 	<dependencies>
 
 		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20140107</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
@@ -67,11 +72,11 @@
 			</exclusions>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
-		<dependency>
+		<!--<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
 		<dependency>
@@ -104,7 +109,7 @@
 			<version>2.5.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>3.25.0-GA</version>
@@ -114,7 +119,7 @@
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
@@ -125,23 +130,23 @@
 
 
 		<!-- https://mvnrepository.com/artifact/org.antlr/antlr-runtime -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr-runtime</artifactId>
 			<version>3.5.1</version>
-		</dependency>
+		</dependency>-->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.j2mvc</groupId>
 			<artifactId>j2mvc-util</artifactId>
 			<version>2.1.01</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.j2mvc/j2mvc-framework-web -->
+		&lt;!&ndash; https://mvnrepository.com/artifact/com.j2mvc/j2mvc-framework-web &ndash;&gt;
 		<dependency>
 			<groupId>com.j2mvc</groupId>
 			<artifactId>j2mvc-framework-web</artifactId>
 			<version>2.1.08</version>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -156,11 +161,11 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.j2mvc/j2mvc-framework-web -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.j2mvc</groupId>
 			<artifactId>j2mvc-searcher</artifactId>
 			<version>2.1.02</version>
-		</dependency>
+		</dependency>-->
 		
 		<dependency>
 			<groupId>com.minmeng</groupId>

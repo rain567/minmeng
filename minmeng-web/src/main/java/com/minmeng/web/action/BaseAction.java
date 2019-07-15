@@ -7,9 +7,10 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
-import com.j2mvc.framework.action.Action;
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.framework.mapping.ActionUri;
+
+import org.fixwork.framework.action.Action;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.mapping.ActionUri;
 import org.jsoup.Connection;
 import org.jsoup.helper.HttpConnection;
 import org.jsoup.nodes.Document;
@@ -37,7 +38,7 @@ import com.minmeng.web.util.JspUtil;
  * @Version 1.0.1 
  * @Date 2014-12-21
  */
-public class BaseAction extends Action{
+public class BaseAction extends Action {
 	protected Logger log = Logger.getLogger(getClass().getCanonicalName());
 	/** 索引路径 */
 	protected String indexDir = I18n.i18n.get("INDEXED_DIR");

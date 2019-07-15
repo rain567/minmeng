@@ -5,7 +5,11 @@ import java.io.IOException;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import com.j2mvc.util.StringUtils;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.util.MD5;
+import org.fixwork.util.StringUtils;
+import org.fixwork.util.Utils;
 
 public class SubTextTag  extends SimpleTagSupport {
 	String source = "";// 源

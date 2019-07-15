@@ -41,109 +41,6 @@
 				</dd>
 			</dl>
 			<dl>
-				<dd class="l"><font color="red">*</font>标题：</dd>
-				<dd class="c">
-					<input type="text" class="text long" name="title" value="${info.title }" />
-					<div class="msg tip">标题不能为空</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">副标题：</dd>
-				<dd class="c">
-					<input type="text" class="text long" name="subtitle" value="${info.subtitle }" />
-					<div class="msg tip"></div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">图片：</dd>
-				<dd><a id="upload">上传图片</a></dd>
-			</dl>
-			<dl>
-				<dd style="margin-left:88px;">
-					<div style="clear:both"></div>
-					<div class="progressstate"></div>
-					<div style="clear:both"></div>
-					<div id="defaultUploadAuto"></div>
-					<div style="clear:both"></div>
-					<div id="uploadTip" class="tip msg">图片尺寸推荐：宽120像素，高90像素，或4:3比例</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">视频：</dd>
-				<dd class="c">
-					<input type="text" class='text long' name="video" id="video" value="${info.video }"/>
-					<div style='clear:both'></div>
-					<div class="uploadDemo" style="width:100%;height:auto">
-						<div id="defaultUpload"></div>
-						<div style="clear:both"></div>
-					</div>
-					<div style='clear:both'></div>
-					<div class='msg tip'>
-						上传后缀名为“<font color=red>mp4</font>,
-						<font color=red>flv</font>,
-						<font color=red>f4v</font>,”的视频文件，最大300M。
-						或浏览服务器选择视频，或直接输入视频地址。
-						<a href='${SITE_RESOURCES_PREFIX }/download/FFSetup3.0.1.1.zip'>下载视频格式转换工具</a>
-					</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">
-					自定义链接：
-				</dd>
-				<dd>
-					<input type="text" class="text long" name="href" value="${info.href }" />
-					<div class='msg tip'>此项不为空，将覆盖默认内容链接地址。</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">内容：</dd>
-				<dd class="c">
-					<textarea name="content" style="width:690px;height:240px">${content }</textarea>
-					<div class="msg tip">插入的图片宽度设置不要超过690像素</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">
-					<font color="red">*</font>发布时间：
-				</dd>
-				<dd>
-					<input type="text" class="Wdate text" name="createTime"
-						   style="width:176px;padding-top:0;padding-bottom:0;"
-						   onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"
-						   value="${info.createTime }"/>
-					<span class='msg'></span>
-					<div style='clear:both'></div>
-					<div class="msg tip">可在控件内选择日期时间，格式如：1999-11-11 11:11:11</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">
-					作者/来源：
-				</dd>
-				<dd>
-					<input type="text" class="text normal" name="source" value="${info.source }" />
-					<div class='msg tip'>在此填入作者或来源网站名称或公司/单位/机构。</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">
-					标签：
-				</dd>
-				<dd class="c">
-					<input type="text" class="text normal" name="keywords" value="${info.keywords }" />
-					<div class='msg tip'>标签即“关键字”，能够最大程度概括信息内容的字或者词，关键字最好能在页面反复出现。用“,”或空格分隔。</div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">
-					浏览量：
-				</dd>
-				<dd>
-					<input type="text" class="text short" name="brower" value="${info.brower }" />
-				</dd>
-			</dl>
-			<dl>
 				<dd class="l">推荐到：</dd>
 				<dd class="c">
 					<input type="hidden" name="recom" value="${info.recom }" />
@@ -152,49 +49,9 @@
 				</dd>
 			</dl>
 			<dl>
-				<dd class="l">
-					状态：
-				</dd>
-				<dd>
-					<div style="margin-top:5px">
-						<c:if test="${info.status == STATUS_CREATE}">
-							创建
-						</c:if>
-						<c:if test="${info.status == STATUS_SUBMIT}">
-							提交未审核
-						</c:if>
-						<c:if test="${info.status == STATUS_AUDITING}">
-							提交审核
-						</c:if>
-						<c:if test="${info.status == STATUS_AUDIT_OK}">
-							审核通过
-						</c:if>
-						<c:if test="${info.status == STATUS_AUDIT_NO}">
-							审核不通过
-						</c:if>
-					</div>
-					<div class="msg tip"></div>
-				</dd>
-			</dl>
-			<dl>
-				<dd class="l">附件：</dd>
-				<dd><a id="upload">上传附件</a></dd>
-			</dl>
-			<dl>
-				<dd style="margin-left:88px;">
-					<div style="clear:both"></div>
-					<div class="fileProgressstate"></div>
-					<div style="clear:both"></div>
-					<div id="fileUploadAuto"></div>
-					<div style="clear:both"></div>
-					<div id="fileUploadTip" class="tip msg"></div>
-				</dd>
-			</dl>
-			<dl>
 				<dd class="l">&nbsp;</dd>
 				<dd>
 					<button type="submit" class="f-button submit" style="margin-right:10px">保 存</button>
-					<button type="reset" class="f-button reset" >重 填</button>
 				</dd>
 			</dl>
 		</form>
@@ -239,7 +96,7 @@
 		width:128,
 		height:128,
 		urlPrefix:'${ATTACH_PREFIX}/',
-		urls:'${fn:join(images,",")}'.split(","),
+		urls:'${fn:join(images,",")}'.split(','),
 		maxSize:300*1024*1024, // 最大50M
 		autoCreate:true,
 		fileSizeLimit:1024*1024*1024,
@@ -248,7 +105,6 @@
 			value:'${adminSessionid}'
 		}],
 		success	:function(urls){
-			alert(urls)
 			$('#uploadTip').removeClass('error');
 			$('#uploadTip').html('');
 		},

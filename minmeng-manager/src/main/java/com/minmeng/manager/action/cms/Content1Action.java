@@ -1,7 +1,9 @@
 package com.minmeng.manager.action.cms;
 
 import java.io.File;
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.fixwork.framework.i18n.I18n;
@@ -45,6 +47,8 @@ public class Content1Action extends BaseAction{
    
 	@ActionUri(uri="edit1([/])?",description="编辑列表栏目")
 	public String edit1(ContentInfo info,String cid){
+		Map<String, Object> map = toMapObject(getRequest().getParameterMap());
+		cid = (String) map.get("cid");
 		put("id", !StringUtils.isEmpty(info.getId())?info.getId():Utils.createId());
 		put("catId",info.getCat()!=null?info.getCat().getId():cid);
 		if(info!=null){
@@ -79,6 +83,13 @@ public class Content1Action extends BaseAction{
 	public void save(String catId, ContentInfo info,
 			String keywords, String href,
 			String video,String source,String[] images,String[] files){
+		Map<String, Object> map = toMapObject(getRequest().getParameterMap());
+		catId = (String) map.get("catId");
+		keywords = (String) map.get("keywords");
+		video = (String) map.get("video");
+		source = (String) map.get("source");
+		images = getRequest().getParameterMap().get("images");
+		files = getRequest().getParameterMap().get("files");
 		if(StringUtils.isEmpty(info.getId())){
 			printJson(new Error("ID不能为空！"));
 			return;
@@ -94,7 +105,6 @@ public class Content1Action extends BaseAction{
 			info.setSource(source);
 			info.setKeywords(keywords);
 			info.setHref(href);
-			
 			List<Error> errors = DataValidations.dataTooLong(info);
 			if(errors!=null && errors.size()>0){
 				printJson(new Error( "数据长度超过限制.",errors));

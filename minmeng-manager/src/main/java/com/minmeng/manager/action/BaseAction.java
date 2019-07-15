@@ -1,11 +1,7 @@
 package com.minmeng.manager.action;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
- 
+import java.util.*;
 import org.apache.log4j.Logger;
 import org.fixwork.framework.action.Action;
 import org.fixwork.framework.i18n.I18n;
@@ -78,7 +74,10 @@ public class BaseAction extends Action{
 	 */
 	@ActionUri(uri="source([/])?")
 	public String source(String navid){
-		if(navid.equalsIgnoreCase("cms")){
+		Map<String, String[]> parameterMap = this.request.getParameterMap();
+		Map<String, Object> objectMap = toMapObject(parameterMap);
+		navid = (String) objectMap.get("navid");
+		if(navid.equals("cms")){
 			// 结果
 			List<JsonSource> result = new ArrayList<JsonSource>();
 			List<JsonSource> items = new ArrayList<JsonSource>();
@@ -357,6 +356,16 @@ public class BaseAction extends Action{
 		item.setHref(href);
 		siList.add(item);
 		return Indexer.indexed(siList,indexDir);
+	}
+
+	public Map<String, Object> toMapObject(Map<String, String[]> paraMap) {
+		Map<String, Object> map = new HashMap<>();
+		Set<String> strings = paraMap.keySet();
+		for (String s : strings) {
+			String[] stringArray = paraMap.get(s);
+			map.put(s, org.apache.commons.lang3.StringUtils.join(stringArray));
+		}
+		return map;
 	}
 
 }

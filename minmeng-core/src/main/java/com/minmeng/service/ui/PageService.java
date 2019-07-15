@@ -3,8 +3,8 @@ package com.minmeng.service.ui;
 import java.util.Date;
 import java.util.List;
 
-import com.j2mvc.framework.dao.DaoSupport;
-import com.j2mvc.util.Utils;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.util.Utils;
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;

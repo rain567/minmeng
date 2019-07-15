@@ -2,13 +2,14 @@ package com.minmeng.service.common;
 
 import java.util.List;
 
-import com.j2mvc.framework.dao.DaoSupport;
-import com.j2mvc.util.StringUtils;
-import com.j2mvc.util.Utils;
+
 
 import com.minmeng.entity.DBConstants;
 import com.minmeng.entity.common.Admin;
 import com.minmeng.service.CommonService;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.util.StringUtils;
+import org.fixwork.util.Utils;
 
 /**
  * 

@@ -2,9 +2,10 @@ package com.minmeng.web.action;
 
 import java.util.List;
 
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
-import com.j2mvc.util.StringUtils;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
+import org.fixwork.util.*;
+import com.minmeng.entity.ui.Page;
 
 import com.minmeng.entity.ui.Page;
 import com.minmeng.entity.ui.PageView;

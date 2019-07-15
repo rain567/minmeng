@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.j2mvc.framework.dao.DaoSupport;
+import org.fixwork.framework.dao.DaoSupport;
 
 import com.minmeng.entity.DBConstants;
 import com.minmeng.entity.common.GlobalSetting;

@@ -2,13 +2,15 @@ package com.minmeng.entity.common;
 
 import java.util.Date;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * 
@@ -20,7 +22,7 @@ import com.minmeng.entity.DBConstants;
  */
 @Table(DBConstants.Table.Common.BOARD)
 @PrimaryKey(autoIncrement = false)
-public class Board extends BaseEntity{
+public class Board extends BaseEntity {
 
 	private static final long serialVersionUID = 5100465667519640186L;
 

@@ -3,18 +3,19 @@ package com.minmeng.entity.cms;
 import java.util.Date;
 import java.util.List;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.Foreign;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
 import com.minmeng.entity.common.Attach;
 import com.minmeng.entity.common.Cat;
 import com.minmeng.service.cms.ContentAttachService;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.Foreign;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * 
@@ -26,12 +27,12 @@ import com.minmeng.service.cms.ContentAttachService;
  */
 @Table(DBConstants.Table.CMS.CONTENT_INFO)
 @PrimaryKey(autoIncrement = false)
-public class ContentInfo extends BaseEntity{
+public class ContentInfo extends BaseEntity {
 	
 	private static final long serialVersionUID = 7731908500144732607L;
 
 	/** id */
-	@Column(name = "id",length = 32)  
+	@Column(name = "id",length = 32)
 	private String id;	
 
 	/** 分类 */
@@ -98,7 +99,18 @@ public class ContentInfo extends BaseEntity{
 	private String creater="";	
 	@Column(name = "updater")
 	private String updater="";
-	
+
+	@Column(name = "release")
+	private int release;
+
+	public int getRelease() {
+		return release;
+	}
+
+	public void setRelease(int release) {
+		this.release = release;
+	}
+
 	public String getId() {
 		return id;
 	}

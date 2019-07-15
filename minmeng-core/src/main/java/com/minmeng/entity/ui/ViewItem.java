@@ -2,15 +2,17 @@ package com.minmeng.entity.ui;
 
 import java.util.Date;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.Foreign;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
 import com.minmeng.entity.common.Cat;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.Foreign;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * @Description 控件条目
@@ -21,7 +23,7 @@ import com.minmeng.entity.common.Cat;
  */
 @Table(DBConstants.Table.UI.VIEW_ITEM)
 @PrimaryKey(autoIncrement = false)
-public class ViewItem  extends BaseEntity{
+public class ViewItem  extends BaseEntity {
 
 	private static final long serialVersionUID = -17334212391232355L;
 

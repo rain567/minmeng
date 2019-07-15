@@ -3,11 +3,10 @@ package com.minmeng.service.cms;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import com.j2mvc.framework.dao.DaoSupport;
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.util.StringUtils;
-import com.j2mvc.util.Utils;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.util.StringUtils;
+import org.fixwork.util.Utils;
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;

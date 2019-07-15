@@ -2,13 +2,15 @@ package com.minmeng.entity.sys;
 
 import java.util.Date;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * 
@@ -20,7 +22,7 @@ import com.minmeng.entity.DBConstants;
  */
 @Table(DBConstants.Table.Sys.SQL_DUMP)
 @PrimaryKey()
-public class SqlDump extends BaseEntity{
+public class SqlDump extends BaseEntity {
 
 	private static final long serialVersionUID = -3633988218465881129L;
 

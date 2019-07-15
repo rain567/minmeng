@@ -1,11 +1,13 @@
 package com.minmeng.entity.common;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
+
 
 import com.minmeng.entity.DBConstants;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * 全局设置
@@ -16,7 +18,7 @@ import com.minmeng.entity.DBConstants;
  */
 @Table(DBConstants.Table.Common.GLOBAL_SETTING)
 @PrimaryKey(autoIncrement = false)
-public class GlobalSetting extends BaseEntity{
+public class GlobalSetting extends BaseEntity {
 
 	private static final long serialVersionUID = -5746951347870381892L;
 

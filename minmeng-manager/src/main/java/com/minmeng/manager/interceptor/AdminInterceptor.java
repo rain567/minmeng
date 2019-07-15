@@ -45,6 +45,7 @@ public class AdminInterceptor extends MeasureInterceptor{
 		filters.add("identify-code");
 		filters.add("forget");
 		filters.add("uploadJson");// 待修改
+		filters.add("receive");//报送接受
 		uri = StringUtils.deleRepeat(uri, "/");
 		uri = uri.endsWith("/")?uri.substring(0,uri.lastIndexOf("/")):uri;
 		int start = uri.indexOf("/");
@@ -65,6 +66,7 @@ public class AdminInterceptor extends MeasureInterceptor{
 		filters.add("uploadFile");
 		filters.add("progress");
 		filters.add("exticon");
+		filters.add("receive");//报送接受
 		uri = StringUtils.deleRepeat(uri, "/");
 		uri = uri.endsWith("/")?uri.substring(0,uri.lastIndexOf("/")):uri;
 		int start = uri.indexOf("/");

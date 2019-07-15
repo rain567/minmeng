@@ -3,13 +3,19 @@ package com.minmeng.web.action;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
-import com.j2mvc.framework.i18n.I18n;
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
-import com.j2mvc.searcher.SearchResult;
-import com.j2mvc.searcher.Searcher;
-import com.j2mvc.util.Pagination;
-import com.j2mvc.util.StringUtils;
+
+import org.fixwork.framework.action.Action;
+import org.fixwork.framework.action.RequestUri;
+import org.fixwork.framework.i18n.I18n;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
+import org.fixwork.search.SearchResult;
+import org.fixwork.search.Searcher;
+import org.fixwork.util.*;
+import com.minmeng.entity.common.Board;
+import com.minmeng.entity.ui.Page;
+import com.minmeng.service.common.BoardService;
+import org.fixwork.util.Error;
 
 /**
  * @Description 搜索

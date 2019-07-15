@@ -3,16 +3,18 @@ package com.minmeng.entity.common;
 import java.util.Date;
 import java.util.List;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.JSONField;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
-import com.j2mvc.util.StringUtils;
+
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
 import com.minmeng.service.common.CatService;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.JSONField;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
+import org.fixwork.util.StringUtils;
 
 /**
  * 
@@ -24,7 +26,7 @@ import com.minmeng.service.common.CatService;
  */
 @Table(DBConstants.Table.Common.CAT)
 @PrimaryKey(autoIncrement = false)
-public class Cat extends BaseEntity{
+public class Cat extends BaseEntity {
 
 	private static final long serialVersionUID = 1263613099758254265L;
 	

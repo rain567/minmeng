@@ -2,9 +2,9 @@ package com.minmeng.web.action;
 
 import java.io.IOException;
 
-import com.j2mvc.framework.action.RequestUri;
-import com.j2mvc.framework.mapping.ActionPath;
-import com.j2mvc.framework.mapping.ActionUri;
+import org.fixwork.framework.action.RequestUri;
+import org.fixwork.mapping.ActionPath;
+import org.fixwork.mapping.ActionUri;
 
 /**
  * @Description 内容列表
@@ -19,7 +19,7 @@ public class ContentInfoAction  extends ContentAction {
 
 	
 	@ActionUri(uri="[a-z\\-\\d]+/[a-z\\-\\d]+([/])?")
-	public String info(RequestUri uri,Integer p){
+	public String info(RequestUri uri, Integer p){
 		String catId = uri.getValues()[1];
 		String id = uri.getValues()[2];
 		cat = catService.getByUri(catId);

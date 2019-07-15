@@ -2,8 +2,8 @@ package com.minmeng.service.ui;
 
 import java.util.List;
 
-import com.j2mvc.framework.dao.DaoSupport;
-import com.j2mvc.util.StringUtils;
+import org.fixwork.framework.dao.DaoSupport;
+import org.fixwork.util.StringUtils;
 
 import com.minmeng.entity.DBConstants;
 import com.minmeng.entity.ui.Nav;

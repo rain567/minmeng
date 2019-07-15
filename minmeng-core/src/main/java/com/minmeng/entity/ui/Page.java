@@ -2,13 +2,15 @@ package com.minmeng.entity.ui;
 
 import java.util.Date;
 
-import com.j2mvc.framework.entity.BaseEntity;
-import com.j2mvc.framework.mapping.Column;
-import com.j2mvc.framework.mapping.PrimaryKey;
-import com.j2mvc.framework.mapping.Table;
+
+
 
 import com.minmeng.Constants;
 import com.minmeng.entity.DBConstants;
+import org.fixwork.framework.entity.BaseEntity;
+import org.fixwork.mapping.Column;
+import org.fixwork.mapping.PrimaryKey;
+import org.fixwork.mapping.Table;
 
 /**
  * @Description 页面
@@ -19,7 +21,7 @@ import com.minmeng.entity.DBConstants;
  */
 @Table(DBConstants.Table.UI.PAGE)
 @PrimaryKey(autoIncrement = false)
-public class Page  extends BaseEntity{
+public class Page  extends BaseEntity {
 
 	private static final long serialVersionUID = -1733428419617131655L;
 
