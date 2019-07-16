@@ -34,7 +34,6 @@ public class ContentListAction  extends ContentAction {
 		cat = catService.getByUri(uri.getValues()[1]);
 		Page page = pageService.getByName(Page.NAME_LIST);
 		if(cat!=null){
-			// 页面信息
 //			String title = page.getTitle();
 //			title = title!=null && !title.trim().equals("")?title.trim():page.getName();
 //			title = title!=null && !title.trim().equals("")?title:cat.getName();
